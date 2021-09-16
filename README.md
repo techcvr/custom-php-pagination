@@ -1,5 +1,5 @@
 # custom-php-pagination
-
+``` PHP
 <?php include 'header.php'; ?>
 <?php
 $cat = $_GET['cat'];
@@ -179,3 +179,4 @@ else {
     echo '<a href="#"><div class="pagination_arrow"><i class="fa fa-arrow-right"></i></div></a>';;
 }
 ?>
+```
