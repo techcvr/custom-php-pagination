@@ -4,7 +4,10 @@
 <?php
 $cat = $_GET['cat'];
 $sub_cat = $_GET['cid'];
-$sql_cat = "SELECT * from `category` where `id` = '$sub_cat'";
+
+// $sql4 = "SELECT * from `product_list` where `pname` LIKE '%$search%' or `description` LIKE '%$search%'"; - for search 
+
+$sql_cat = "SELECT * from `category` where `id` = '$sub_cat' ";
 $res_cat = $mysqli->query($sql_cat) or die($mysqli->error);
 $row_cat = $res_cat->fetch_assoc();
 
